@@ -23,7 +23,7 @@ export let indexRoutes = [
     component: () => import('@/views/role/role'),
     name: '角色管理',
     beforeEnter: (to, from, next) => {
-      ifUrl('/role') ? next() : next('/role')
+      ifUrl('/role') ? next() : next('/home')
     }
   },
   {
@@ -31,7 +31,7 @@ export let indexRoutes = [
     component: () => import('@/views/user/user'),
     name: '管理员管理',
     beforeEnter: (to, from, next) => {
-      ifUrl('/user') ? next() : next('/user')
+      ifUrl('/user') ? next() : next('/home')
     }
   },
   {
@@ -39,7 +39,7 @@ export let indexRoutes = [
     component: () => import('@/views/cate/cate'),
     name: '商品分类',
     beforeEnter: (to, from, next) => {
-      ifUrl('/cate') ? next() : next('/cate')
+      ifUrl('/cate') ? next() : next('/home')
     }
   },
   {
@@ -47,7 +47,7 @@ export let indexRoutes = [
     component: () => import('@/views/specs/specs'),
     name: '商品规格',
     beforeEnter: (to, from, next) => {
-      ifUrl('/specs') ? next() : next('/specs')
+      ifUrl('/specs') ? next() : next('/home')
     }
   },
   {
@@ -55,7 +55,7 @@ export let indexRoutes = [
     component: () => import('@/views/banner/banner'),
     name: '轮播图管理',
     beforeEnter: (to, from, next) => {
-      ifUrl('/banner') ? next() : next('/banner')
+      ifUrl('/banner') ? next() : next('/home')
     }
   },
   {
@@ -63,7 +63,7 @@ export let indexRoutes = [
     component: () => import('@/views/member/member'),
     name: '会员管理',
     beforeEnter: (to, from, next) => {
-      ifUrl('/member') ? next() : next('/member')
+      ifUrl('/member') ? next() : next('/home')
     }
   },
   {
@@ -71,7 +71,7 @@ export let indexRoutes = [
     component: () => import('@/views/seck/seck'),
     name: '秒杀管理',
     beforeEnter: (to, from, next) => {
-      ifUrl('/seck') ? next() : next('/seck')
+      ifUrl('/seck') ? next() : next('/home')
     }
   },
   {
@@ -79,7 +79,7 @@ export let indexRoutes = [
     component: () => import('@/views/goods/goods'),
     name: '商品管理',
     beforeEnter: (to, from, next) => {
-      ifUrl('/goods') ? next() : next('/goods')
+      ifUrl('/goods') ? next() : next('/home')
     }
   }
 ]
